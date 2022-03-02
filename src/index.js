@@ -38,9 +38,10 @@ function addNotes() {
   }
 }
 
+
 function appendNotes(notesArr) {
   document.querySelector("#appendNotes").innerHTML = "";
-  notesArr.map((el) => {
+  notesArr.map((el, ind) => {
     let { text } = el;
 
     let maindiv = document.createElement("div");
@@ -51,11 +52,29 @@ function appendNotes(notesArr) {
     p.textContent = text;
     button.textContent = "Delete Notes";
 
+    button.addEventListener("click" , function (e){
+      e.preventDefault()
+      console.log(ind)
+      deleteFunction(ind)
+    })
+
     firstDiv.append(p);
     maindiv.append(firstDiv, button);
     document.querySelector("#appendNotes").append(maindiv);
+    let i = ind
+    
+
   });
 }
+
+
+//Code for Delete any one 
+function deleteFunction(i){
+  notesArr.splice(i, 1);
+  appendNotes(notesArr)
+  localStorage.setItem("notes" , JSON.stringify(notesArr));
+}
+
 
 //Creating Cards
 // const maindiv = document.createElement("div");
