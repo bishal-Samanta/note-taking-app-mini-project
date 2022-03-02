@@ -1,0 +1,241 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+
+/* Navbar */
+#navbar{
+    background-color: rgb(7, 82, 112);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-sizing: border-box;
+
+}
+
+
+/* Search Section */
+.searchbar{
+    width: 40%;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+}
+
+
+#search{
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    width: 30vh;
+    
+}
+
+
+#searchBtn{
+   
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  min-height: 40px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin-left: 10px;
+
+  
+}
+
+#searchBtn:hover,
+#searchBtn:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+#searchBtn:active {
+  opacity: .5;
+}
+
+
+/* Logo Section */
+
+.logo{
+    /* border: 2px solid black; */
+    width: 60%;
+    height: 37px;
+    display: flex;
+
+}
+
+.logoImage{
+    width: 50px;
+}
+
+.header{
+    color: white;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+#body{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+#body> div{
+    min-height: 91vh;
+    /* border: 2px solid rgb(175, 175, 175); */
+    
+}
+
+#text-area{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    
+}
+
+.main-add-div{
+    background-color: rgb(19, 45, 46);
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 20px;
+    box-sizing: border-box;
+   
+    
+}
+
+.main-add-div> h2:nth-child(1){
+    font-family: sans-serif;
+    color: white;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#addButtons{
+    width: 82%;
+    margin: auto;
+    margin-top: 15px;
+    height:37px;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+#addButtons:hover,
+#addButtons:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+#addButtons:active {
+  opacity: .5;
+}
+
+.add-notes-container{
+    /* border: 2px solid black; */
+    margin-left: 13%;
+   
+}
+
+
+#appendNotes{
+    border: 1px solid transparent;
+    width: 88%;
+    margin: auto;
+    margin-top: 23px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    row-gap: 30px;
+    column-gap: 30px;
+    
+
+}
+
+#appendNotes> div{
+    border: 1px solid transparent;
+    min-height: 250px;
+    border-radius: 10px;
+    background-color: #d1d0d0;
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#appendNotes>  div> button:nth-child(2){
+    width: 82%;
+    margin: auto;
+    margin-top: 15px;
+    height:37px;
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+#appendNotes>  div> button:nth-child(2):hover,
+#appendNotes>  div> button:nth-child(2):active {
+  background-color: white;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+#appendNotes > div> div:nth-child(1){
+    min-height: 200px;
+    background-color: rgb(85, 85, 85);
+    padding: 10px;
+}
+
+#appendNotes > div> div:nth-child(1)> p{
+    color: white;
+
+}
