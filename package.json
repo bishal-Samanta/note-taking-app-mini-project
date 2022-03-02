@@ -19,5 +19,13 @@
   },
   "devDependencies": {
     "file-loader": "^6.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bishal-Samanta/note-taking-app-mini-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bishal-Samanta/note-taking-app-mini-project/issues"
+  },
+  "homepage": "https://github.com/bishal-Samanta/note-taking-app-mini-project#readme"
 }
